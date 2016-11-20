@@ -46,3 +46,20 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]   
+
+# heroku deployment
+gem 'rails_12factor', group: :production
+# user auth
+gem 'devise'
+# relational mapping
+gem "rails-erd"
+# geocoding to get lat and long values
+gem 'geocoder'
+# bootstrap generator
+gem 'bootstrap-generators'
+# mapping
+gem 'gmaps4rails', '~> 2.0.3'
+# to add 'content_tag_for' method which was removed from Rails 5.0
+gem 'record_tag_helper', '~> 1.0'
+# google's MarkerClusterer.js
+gem 'markerclustererplus-rails'

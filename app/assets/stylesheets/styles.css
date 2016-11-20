@@ -1,0 +1,56 @@
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: #D3F4FE;
+}
+
+h1{
+	line-height: 0.3;
+	font-size: 23;
+}
+
+h2{
+	line-height: 0.2;
+	font-size: 17;
+}
+
+#wrap{
+	width: auto; 
+	margin-left: 50;
+	margin-right: 50;
+}
+
+#wrap1{
+	text-align: center;
+}
+
+#notifications{
+	display: inline-block;
+    width: 49%;
+    height: auto;
+}
+
+#working, #consult, #reception, #recovery{
+	color:#FF6249;
+}
+
+#Time{
+	text-align: right;
+	display: inline-block;
+    width: 50%;
+    height: auto;
+}
+
+#container {
+    overflow: hidden
+}
+
+#information{
+    float:left;
+    width:44%;
+}
+
+#status{
+	float:left;
+    width:55%;
+
+}

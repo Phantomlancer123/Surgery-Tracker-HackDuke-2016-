@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Scheduled time:</strong>
+  <%= @surgery.scheduled_time %>
+</p>
+
+<p>
+  <strong>Patient:</strong>
+  <%= @surgery.patient %>
+</p>
+
+<p>
+  <strong>Tracking:</strong>
+  <%= @surgery.tracking_id %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @surgery.description %>
+</p>
+
+<p>
+  <strong>Est length:</strong>
+  <%= @surgery.est_length %>
+</p>
+
+<%= link_to 'Edit', edit_surgery_path(@surgery) %> |
+<%= link_to 'Back', surgeries_path %>

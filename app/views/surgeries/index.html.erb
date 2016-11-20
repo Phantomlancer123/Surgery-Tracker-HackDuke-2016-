@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Surgeries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Scheduled time</th>
+      <th>Patient</th>
+      <th>Tracking</th>
+      <th>Description</th>
+      <th>Est length</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @surgeries.each do |surgery| %>
+      <tr>
+        <td><%= surgery.scheduled_time %></td>
+        <td><%= surgery.patient %></td>
+        <td><%= surgery.tracking_id %></td>
+        <td><%= surgery.description %></td>
+        <td><%= surgery.est_length %></td>
+        <td><%= link_to 'Show', surgery %></td>
+        <td><%= link_to 'Edit', edit_surgery_path(surgery) %></td>
+        <td><%= link_to 'Destroy', surgery, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Surgery', new_surgery_path %>

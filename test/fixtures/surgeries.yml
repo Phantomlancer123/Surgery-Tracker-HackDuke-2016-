@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  scheduled_time: 2016-11-19 23:42:05
+  patient: MyString
+  tracking_id: 1
+  description: MyString
+  est_length: 1
+
+two:
+  scheduled_time: 2016-11-19 23:42:05
+  patient: MyString
+  tracking_id: 1
+  description: MyString
+  est_length: 1

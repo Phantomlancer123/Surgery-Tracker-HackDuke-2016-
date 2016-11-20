@@ -1,0 +1,74 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+	<script src="javascripts/js.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<title>Surgery Tracker</title>
+</head>
+<body>
+
+<h3>
+Comment: This is an example patient page.
+</h3>
+
+<div id="wrap">
+
+<div id="container">
+
+	<div id="information">
+		<h1 id="name"> Patient rep </h1>
+		<script> replace("name", "Bob"); </script>
+
+		<h2 id="dob"> Date of Birth: rep</h2>
+		<script> replace("dob", "123"); </script>
+
+		<h2 id="id"> Tracker ID: rep </h2>
+		<script> replace("id", "123"); </script>
+
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<%= image_tag("heart.png", :alt => "rss feed") %>
+	</div>
+
+	<div id="status">
+		<h2> Status </h2>
+		<%= image_tag("bar1.png", :alt => "rss feed") %>
+		<script>status("working1");</script>
+	</div>
+
+</div>
+
+<div id="notifications">
+
+<button type="button" onclick="notification()">Notification Demo 1</button>
+<p> Please turn on your browser notification permissions </p>
+
+	<h1> Notifications</h1>
+	<h2 id="working"> Working</h2>
+	<script> grey("yes", "working"); </script>
+
+	<h2 id="consult"> Consult</h2> 
+	<script> grey("no", "consult"); </script>
+
+	<h2 id="reception"> Please Visit the Reception</h2> 
+	<script> grey("no", "reception"); </script>
+
+	<h2 id="recovery"> Recovery Room: rep </h2>
+	<script> 
+	grey("no", "recovery");
+	replace("recovery", "123")
+	 </script>
+</div>
+
+<div id="Time">
+	<h1 id="time"> Predicted Time: rep</h1>
+	<script> replace("time", "123") </script>
+</div>
+
+<h3>
+Comment: Doctors create new surgery entries and view patient information <a href="http://localhost:3000/surgeries">here</a>
+</h3>
+

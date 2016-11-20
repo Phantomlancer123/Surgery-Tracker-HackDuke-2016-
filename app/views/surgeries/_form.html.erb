@@ -1,0 +1,42 @@
+<%= form_for(surgery) do |f| %>
+  <% if surgery.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(surgery.errors.count, "error") %> prohibited this surgery from being saved:</h2>
+
+      <ul>
+      <% surgery.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :scheduled_time %>
+    <%= f.datetime_select :scheduled_time %>
+  </div>
+
+  <div class="field">
+    <%= f.label :patient %>
+    <%= f.text_field :patient %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tracking_id %>
+    <%= f.number_field :tracking_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :est_length %>
+    <%= f.number_field :est_length %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
