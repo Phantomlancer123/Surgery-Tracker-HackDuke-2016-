@@ -1,24 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a project on developing a web app for the families of in-surgery patients. The family members will create their accounts which will be synchronized with the patients' surgery status page. They will be getting real-time updates during the surgery and receive notifications on when they can consult the doctors/surgeons regarding the surgery or the state of the patients.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The main file is located in:
+app --> views --> patient --> index.html
